@@ -1,0 +1,17 @@
+
+
+<div class="face-snap-card">
+    
+
+    <h2> {{ faceSnap.title | uppercase }} </h2>
+    <!--<p *ngIf="faceSnap.location">==> {{ faceSnap.location }}</p> -->
+    <p> {{ faceSnap.desc }} </p>
+    <!--<p>{{ faceSnap.created_at | date: 'MMM d, yyyy - HH:mm a' }} </p>
+    <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
+    <p > 
+        <button (click)="onSnap()" [ngClass]="{ snapped: btnText == 'Unsnap' }" > {{ btnText }} </button>
+        🤌 <span [ngStyle]="{color: 'rgb(0, '+ faceSnap.snaps +', 0)'}" >{{ faceSnap.snaps }}</span>
+    </p>  -->
+    <button (click)="onViewFaceSnap()">View</button>  
+</div>
+

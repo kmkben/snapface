@@ -1,0 +1,4 @@
+
+<button (click)="onAddNewFaceSnap()" class="face-snap-card">+ Add new face snap</button> 
+
+<app-face-snap *ngFor="let facesnap of facesnaps" [faceSnap]="facesnap"></app-face-snap>

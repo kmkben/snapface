@@ -1,0 +1,13 @@
+<div class="landing-block">
+
+  <form #emailForm="ngForm" (ngSubmit)="onSubmitForm(emailForm)">
+    <label for="email" class="form-label">Subscribe to newsletters : </label>
+    <input type="text" class="form-control" id="email" name="userEmail" [(ngModel)]="userEmail">
+    <button type="submit"> OK </button>
+  </form>
+  <hr/>
+  <img src="assets/snapface.png" alt="Snapface logo">
+  <div class="landing-links">
+    <button (click)="onContinue()">Continue to Snapface</button>
+  </div>
+  </div>
